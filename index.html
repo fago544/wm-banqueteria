@@ -1,0 +1,364 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WM Banquetería — Productora de eventos</title>
+  <meta name="description" content="WM Banquetería: DJ, banquetería, coctelería, cabina 360°, producción de eventos y matrimonios." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#hero" class="logo" aria-label="Inicio">
+        <span class="logo__mark">WM</span> Banquetería
+      </a>
+      <nav class="nav" aria-label="Navegación principal">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="navMenu" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="navMenu" class="nav__menu">
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a class="btn btn--sm btn--primary" href="#contacto">Cotizar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="hero" aria-label="Sección principal">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__overlay" aria-hidden="true"></div>
+    <div class="container hero__content">
+      <h1 class="hero__title">WM Banquetería</h1>
+      <p class="hero__subtitle">Experiencias memorables para matrimonios y eventos corporativos.</p>
+      <div class="hero__ctas">
+        <a class="btn btn--primary" href="#contacto">Cotizar mi evento</a>
+        <a class="btn btn--ghost" href="#galeria">Ver galería</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="section services" aria-label="Servicios">
+    <div class="container">
+      <h2 class="section__title" data-animate="fade-up">Nuestros Servicios</h2>
+
+      <div class="services__grid">
+        <!-- DJ -->
+        <article class="card service" data-service="dj" tabindex="0" role="button" aria-haspopup="dialog" data-animate="fade-up" data-delay="0">
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="7.5" cy="15.5" r="3"/><circle cx="16.5" cy="15.5" r="3"/><rect x="3" y="6" width="18" height="6" rx="2"/><path d="M7.5 12V9m9 3V9"/></svg>
+          </div>
+          <h3>DJ Profesional</h3>
+          <p>Música y mezcla en vivo para mantener la pista encendida toda la noche.</p>
+          <span class="chip">Abrir galería</span>
+        </article>
+
+        <!-- Banquetería -->
+        <article class="card service" data-service="banqueteria" tabindex="0" role="button" aria-haspopup="dialog" data-animate="fade-up" data-delay="80">
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 11h16M12 11v8M6 19h12"/><path d="M8 11a4 4 0 1 1 8 0"/></svg>
+          </div>
+          <h3>Banquetería & Catering</h3>
+          <p>Menús personalizados con montaje y servicio completo en sala.</p>
+          <span class="chip">Abrir galería</span>
+        </article>
+
+        <!-- Coctelería -->
+        <article class="card service" data-service="cocteleria" tabindex="0" role="button" aria-haspopup="dialog" data-animate="fade-up" data-delay="160">
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M6 3h12l-6 7 6 8H6l6-8-6-7z"/></svg>
+          </div>
+          <h3>Coctelería</h3>
+          <p>Barras temáticas, tragos de autor y show de coctelería.</p>
+          <span class="chip">Abrir galería</span>
+        </article>
+
+        <!-- Cabina 360 -->
+        <article class="card service" data-service="cabina360" tabindex="0" role="button" aria-haspopup="dialog" data-animate="fade-up" data-delay="240">
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="4"/><path d="M2 12a10 10 0 0 1 20 0M12 22a10 10 0 0 1-8.66-5M20.66 17A10 10 0 0 1 12 22"/></svg>
+          </div>
+          <h3>Cabina de Video 360°</h3>
+          <p>Video giratorio para clips virales con iluminación profesional.</p>
+          <span class="chip">Abrir galería</span>
+        </article>
+
+        <!-- Producción -->
+        <article class="card service" data-service="produccion" tabindex="0" role="button" aria-haspopup="dialog" data-animate="fade-up" data-delay="320">
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M16 3l5 5-9 9-5-5z"/><path d="M10 15l-4 4"/></svg>
+          </div>
+          <h3>Producción de Eventos & Matrimonios</h3>
+          <p>Planificación integral, protocolo y coordinación el día D.</p>
+          <span class="chip">Abrir galería</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galería Marketing -->
+  <section id="galeria" class="section gallery" aria-label="Galería de imágenes">
+    <div class="container">
+      <h2 class="section__title" data-animate="fade-up">Galería</h2>
+      <div class="carousel" role="region" aria-roledescription="carrusel" aria-label="Fotos de marketing" aria-live="polite">
+        <button class="carousel__arrow prev" aria-label="Imagen anterior">&#10094;</button>
+        <div class="carousel__viewport" tabindex="0">
+          <ul class="carousel__track">
+            <li class="carousel__slide"><img src="https://images.unsplash.com/photo-1543353071-10c8ba85a904?q=80&w=1600&auto=format&fit=crop" alt="Decoración de evento elegante"></li>
+            <li class="carousel__slide"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop" alt="Montaje de banquete"></li>
+            <li class="carousel__slide"><img src="https://images.unsplash.com/photo-1528605105345-5344ea20e269?q=80&w=1600&auto=format&fit=crop" alt="Iluminación ambiente"></li>
+            <li class="carousel__slide"><img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=1600&auto=format&fit=crop" alt="Música y pista de baile"></li>
+          </ul>
+        </div>
+        <button class="carousel__arrow next" aria-label="Imagen siguiente">&#10095;</button>
+        <div class="carousel__dots" role="tablist" aria-label="Paginación del carrusel"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nosotros -->
+  <section id="nosotros" class="section about">
+    <div class="container about__grid">
+      <div class="about__text" data-animate="fade-up">
+        <h2 class="section__title">Nosotros</h2>
+        <p>En <strong>WM Banquetería</strong> combinamos gastronomía de autor, producción meticulosa y música que eleva la experiencia. Diseñamos cada evento a medida, con un equipo experto y proveedores de confianza.</p>
+        <ul class="about__facts">
+          <li>+120 eventos realizados</li>
+          <li>4.9/5 satisfacción promedio</li>
+          <li>Cobertura regional</li>
+        </ul>
+        <a class="btn btn--light" href="#contacto">Hablemos de tu fecha</a>
+      </div>
+      <div class="about__image" data-animate="fade-up" data-delay="120">
+        <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=1600&auto=format&fit=crop" alt="Montaje de mesa para evento" />
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-band" aria-label="Llamado a la acción">
+    <div class="container cta-band__inner" data-animate="fade-up">
+      <h3>Agenda tu fecha — cupos limitados</h3>
+      <a class="btn btn--primary" href="#contacto">Solicitar cotización</a>
+    </div>
+  </section>
+
+  <!-- Contacto (íconos + mailto) -->
+  <section id="contacto" class="section contact">
+    <div class="container">
+      <h2 class="section__title" data-animate="fade-up">Contacto</h2>
+      <div class="contact__icons" data-animate="fade-up" aria-label="Canales de contacto">
+        <!-- Gmail (mailto sin servicio externo) -->
+        <a class="contact__icon" href="mailto:contacto@wmbanqueteria.cl?subject=Cotización%20evento" aria-label="Enviar correo">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 13L2 6.5V19a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6.5L12 13z"/><path d="M22 6l-10 7L2 6l10-4 10 4z"/></svg>
+          <span>Gmail</span>
+        </a>
+        <!-- Reemplaza # con tus enlaces -->
+        <a class="contact__icon" href="#" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3V2h-3a5 5 0 0 0-5 5v3H6v4h3v8h4z"/></svg>
+          <span>Facebook</span>
+        </a>
+        <a class="contact__icon" href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg>
+          <span>Instagram</span>
+        </a>
+        <a class="contact__icon" href="#" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4.9A10 10 0 0 0 4.9 20L4 24l4-1a10 10 0 1 0 12-18.1z"/></svg>
+          <span>WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <div class="logo"><span class="logo__mark">WM</span> Banquetería</div>
+        <small>&copy; <span id="year"></span> WM Banquetería — Todos los derechos reservados.</small>
+      </div>
+      <ul class="footer__links">
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <div class="footer__social" aria-label="Redes sociales">
+        <a class="social" href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3V2h-3a5 5 0 0 0-5 5v3H6v4h3v8h4z"/></svg></a>
+        <a class="social" href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg></a>
+        <a class="social" href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4.9A10 10 0 0 0 4.9 20L4 24l4-1a10 10 0 1 0 12-18.1z"/></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FAB WhatsApp -->
+  <a class="wa-fab" href="#" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4.9A10 10 0 0 0 4.9 20L4 24l4-1a10 10 0 1 0 12-18.1z"/></svg>
+  </a>
+
+  <!-- ===== Modales por servicio ===== -->
+  <!-- Repite la estructura; cada modal incluye su propio carrusel (imágenes/videos) y espacio para texto. -->
+  <!-- DJ -->
+  <div class="modal" id="modal-dj" role="dialog" aria-modal="true" aria-labelledby="modal-title-dj" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__dialog" role="document">
+      <button class="modal__close" aria-label="Cerrar" data-close>&times;</button>
+      <h3 id="modal-title-dj" class="modal__title">DJ Profesional</h3>
+
+      <div class="carousel modal__carousel" data-autoplay="7000">
+        <button class="carousel__arrow prev" aria-label="Anterior">&#10094;</button>
+        <div class="carousel__viewport" tabindex="0">
+          <ul class="carousel__track">
+            <li class="carousel__slide"><img src="https://images.unsplash.com/photo-1511576661531-b34d7da5d0bb?q=80&w=1600&auto=format&fit=crop" alt="Equipo de DJ"></li>
+            <li class="carousel__slide">
+              <video muted playsinline loop preload="metadata" aria-label="Show DJ">
+                <source src="https://cdn.coverr.co/videos/coverr-dj-turntable-3321/1080p.mp4" type="video/mp4">
+              </video>
+            </li>
+            <li class="carousel__slide"><img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1600&auto=format&fit=crop" alt="Cabina y luces"></li>
+          </ul>
+        </div>
+        <button class="carousel__arrow next" aria-label="Siguiente">&#10095;</button>
+        <div class="carousel__dots" role="tablist" aria-label="Paginación del carrusel"></div>
+      </div>
+
+      <div class="modal__caption">
+        <!-- Aquí puedes agregar descripción específica del servicio DJ -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Banquetería -->
+  <div class="modal" id="modal-banqueteria" role="dialog" aria-modal="true" aria-labelledby="modal-title-banqueteria" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__dialog" role="document">
+      <button class="modal__close" aria-label="Cerrar" data-close>&times;</button>
+      <h3 id="modal-title-banqueteria" class="modal__title">Banquetería & Catering</h3>
+
+      <div class="carousel modal__carousel" data-autoplay="7000">
+        <button class="carousel__arrow prev" aria-label="Anterior">&#10094;</button>
+        <div class="carousel__viewport" tabindex="0">
+          <ul class="carousel__track">
+            <li class="carousel__slide"><img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=1600&auto=format&fit=crop" alt="Platos gourmet"></li>
+            <li class="carousel__slide"><img src="https://images.unsplash.com/photo-1543777167-3a4b44d5dfcc?q=80&w=1600&auto=format&fit=crop" alt="Buffet y presentación"></li>
+            <li class="carousel__slide">
+              <video muted playsinline loop preload="metadata" aria-label="Servicio en mesa">
+                <source src="https://cdn.coverr.co/videos/coverr-plating-food-1343/1080p.mp4" type="video/mp4">
+              </video>
+            </li>
+          </ul>
+        </div>
+        <button class="carousel__arrow next" aria-label="Siguiente">&#10095;</button>
+        <div class="carousel__dots" role="tablist" aria-label="Paginación del carrusel"></div>
+      </div>
+
+      <div class="modal__caption">
+        <!-- Texto de banquetería -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Coctelería -->
+  <div class="modal" id="modal-cocteleria" role="dialog" aria-modal="true" aria-labelledby="modal-title-cocteleria" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__dialog" role="document">
+      <button class="modal__close" aria-label="Cerrar" data-close>&times;</button>
+      <h3 id="modal-title-cocteleria" class="modal__title">Coctelería</h3>
+
+      <div class="carousel modal__carousel" data-autoplay="7000">
+        <button class="carousel__arrow prev" aria-label="Anterior">&#10094;</button>
+        <div class="carousel__viewport" tabindex="0">
+          <ul class="carousel__track">
+            <li class="carousel__slide"><img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?q=80&w=1600&auto=format&fit=crop" alt="Cócteles de autor"></li>
+            <li class="carousel__slide">
+              <video muted playsinline loop preload="metadata" aria-label="Preparación de cóctel">
+                <source src="https://cdn.coverr.co/videos/coverr-pouring-cocktail-9335/1080p.mp4" type="video/mp4">
+              </video>
+            </li>
+            <li class="carousel__slide"><img src="https://images.unsplash.com/photo-1509043759401-136742328bb3?q=80&w=1600&auto=format&fit=crop" alt="Barra iluminada"></li>
+          </ul>
+        </div>
+        <button class="carousel__arrow next" aria-label="Siguiente">&#10095;</button>
+        <div class="carousel__dots" role="tablist" aria-label="Paginación del carrusel"></div>
+      </div>
+
+      <div class="modal__caption">
+        <!-- Texto de coctelería -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Cabina 360 -->
+  <div class="modal" id="modal-cabina360" role="dialog" aria-modal="true" aria-labelledby="modal-title-cabina360" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__dialog" role="document">
+      <button class="modal__close" aria-label="Cerrar" data-close>&times;</button>
+      <h3 id="modal-title-cabina360" class="modal__title">Cabina de Video 360°</h3>
+
+      <div class="carousel modal__carousel" data-autoplay="7000">
+        <button class="carousel__arrow prev" aria-label="Anterior">&#10094;</button>
+        <div class="carousel__viewport" tabindex="0">
+          <ul class="carousel__track">
+            <li class="carousel__slide"><img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=1600&auto=format&fit=crop" alt="Cabina 360 en acción"></li>
+            <li class="carousel__slide">
+              <video muted playsinline loop preload="metadata" aria-label="Video cabina 360">
+                <source src="https://cdn.coverr.co/videos/coverr-slow-motion-party-2190/1080p.mp4" type="video/mp4">
+              </video>
+            </li>
+            <li class="carousel__slide"><img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?q=80&w=1600&auto=format&fit=crop" alt="Iluminación y círculo de luz"></li>
+          </ul>
+        </div>
+        <button class="carousel__arrow next" aria-label="Siguiente">&#10095;</button>
+        <div class="carousel__dots" role="tablist" aria-label="Paginación del carrusel"></div>
+      </div>
+
+      <div class="modal__caption">
+        <!-- Texto cabina 360 -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Producción -->
+  <div class="modal" id="modal-produccion" role="dialog" aria-modal="true" aria-labelledby="modal-title-produccion" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__dialog" role="document">
+      <button class="modal__close" aria-label="Cerrar" data-close>&times;</button>
+      <h3 id="modal-title-produccion" class="modal__title">Producción de Eventos & Matrimonios</h3>
+
+      <div class="carousel modal__carousel" data-autoplay="7000">
+        <button class="carousel__arrow prev" aria-label="Anterior">&#10094;</button>
+        <div class="carousel__viewport" tabindex="0">
+          <ul class="carousel__track">
+            <li class="carousel__slide"><img src="https://images.unsplash.com/photo-1520975916090-3105956dac38?q=80&w=1600&auto=format&fit=crop" alt="Ceremonia y coordinación"></li>
+            <li class="carousel__slide"><img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?q=80&w=1600&auto=format&fit=crop" alt="Protocolo y timing"></li>
+            <li class="carousel__slide">
+              <video muted playsinline loop preload="metadata" aria-label="Resumen de evento">
+                <source src="https://cdn.coverr.co/videos/coverr-wedding-outdoors-5933/1080p.mp4" type="video/mp4">
+              </video>
+            </li>
+          </ul>
+        </div>
+        <button class="carousel__arrow next" aria-label="Siguiente">&#10095;</button>
+        <div class="carousel__dots" role="tablist" aria-label="Paginación del carrusel"></div>
+      </div>
+
+      <div class="modal__caption">
+        <!-- Texto producción -->
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
+``
